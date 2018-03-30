@@ -1,0 +1,12 @@
+D:\VisualStudio\Clase1\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+D:\VisualStudio\Clase1\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+D:\VisualStudio\Clase1\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+D:\VisualStudio\Clase1\ConsoleApplication2\obj\Debug\ejercicio2.csprojResolveAssemblyReference.cache
+D:\VisualStudio\Clase1\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+D:\VisualStudio\Clase1\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+C:\Users\alumno\Desktop\Clase1\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+C:\Users\alumno\Desktop\Clase1\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\Users\alumno\Desktop\Clase1\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\Users\alumno\Desktop\Clase1\ConsoleApplication2\obj\Debug\ejercicio2.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Clase1\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+C:\Users\alumno\Desktop\Clase1\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb

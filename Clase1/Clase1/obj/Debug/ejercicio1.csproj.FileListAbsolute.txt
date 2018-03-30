@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\Clase1\Clase1\bin\Debug\Clase1.exe.config
+C:\Users\alumno\Desktop\Clase1\Clase1\bin\Debug\Clase1.exe
+C:\Users\alumno\Desktop\Clase1\Clase1\bin\Debug\Clase1.pdb
+C:\Users\alumno\Desktop\Clase1\Clase1\obj\Debug\ejercicio1.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Clase1\Clase1\obj\Debug\Clase1.exe
+C:\Users\alumno\Desktop\Clase1\Clase1\obj\Debug\Clase1.pdb

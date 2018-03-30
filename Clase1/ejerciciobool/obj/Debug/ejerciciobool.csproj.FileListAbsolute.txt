@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\Clase1\ejerciciobool\bin\Debug\ejerciciobool.exe.config
+C:\Users\alumno\Desktop\Clase1\ejerciciobool\obj\Debug\ejerciciobool.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Clase1\ejerciciobool\bin\Debug\ejerciciobool.exe
+C:\Users\alumno\Desktop\Clase1\ejerciciobool\bin\Debug\ejerciciobool.pdb
+C:\Users\alumno\Desktop\Clase1\ejerciciobool\obj\Debug\ejerciciobool.exe
+C:\Users\alumno\Desktop\Clase1\ejerciciobool\obj\Debug\ejerciciobool.pdb

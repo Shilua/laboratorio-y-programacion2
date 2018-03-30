@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\Clase1\cuatro\bin\Debug\cuatro.exe.config
+C:\Users\alumno\Desktop\Clase1\cuatro\bin\Debug\cuatro.exe
+C:\Users\alumno\Desktop\Clase1\cuatro\bin\Debug\cuatro.pdb
+C:\Users\alumno\Desktop\Clase1\cuatro\obj\Debug\cuatro.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Clase1\cuatro\obj\Debug\cuatro.exe
+C:\Users\alumno\Desktop\Clase1\cuatro\obj\Debug\cuatro.pdb

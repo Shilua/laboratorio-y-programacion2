@@ -1,0 +1,5 @@
+C:\Users\alumno\Desktop\Clase1\ejercicio10\bin\Debug\ejercicio10.exe.config
+C:\Users\alumno\Desktop\Clase1\ejercicio10\bin\Debug\ejercicio10.exe
+C:\Users\alumno\Desktop\Clase1\ejercicio10\bin\Debug\ejercicio10.pdb
+C:\Users\alumno\Desktop\Clase1\ejercicio10\obj\Debug\ejercicio10.exe
+C:\Users\alumno\Desktop\Clase1\ejercicio10\obj\Debug\ejercicio10.pdb
