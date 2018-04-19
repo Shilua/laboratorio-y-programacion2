@@ -41,10 +41,7 @@ namespace MiCalculadora
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            txtNumero1.Text = "";
-            txtNumero2.Text = "";
-            lblResultado.Text = "";
-            cmbOperador.Text = "";
+            limpiar();
         }
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
@@ -83,6 +80,14 @@ namespace MiCalculadora
             retorno = Calculadora.operar(num1, num2, operador);
             
             return retorno;
+        }
+
+        private void limpiar()
+        {
+            txtNumero1.Text = "";
+            txtNumero2.Text = "";
+            lblResultado.Text = "";
+            cmbOperador.Text = "";
         }
 
         private void txtNumero1_TextChanged(object sender, EventArgs e)
