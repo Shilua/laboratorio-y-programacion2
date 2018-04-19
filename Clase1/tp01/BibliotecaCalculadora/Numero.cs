@@ -14,7 +14,7 @@ namespace BibliotecaCalculadora
         {
             set
             {
-                this.numero = double.Parse(value);
+                this.numero = ValidarNumero(value);
             }
         }
 
@@ -45,13 +45,12 @@ namespace BibliotecaCalculadora
         public static string BinarioDecimal(string binario)
         {
             int entero = 0;
-            string returnAux = "Valor Invalido";
             for (int i = 1; i <= binario.Length; i++)
             {
                 entero += int.Parse(binario[i - 1].ToString()) * (int)Math.Pow(2, binario.Length - i);
             }
 
-            return returnAux;
+            return entero.ToString();
         }
 
 
@@ -62,13 +61,25 @@ namespace BibliotecaCalculadora
         /// <returns>retorna un string con el numero binario</returns>
         public static string EnteroBinario(double entero)
         {
-            string binario = "Valor Invalido";
-            while (entero >=2)
+            string binario="";
+            while (entero >=0)
             {
                 binario = (entero % 2).ToString() + binario;
                 entero = (int)entero / 2;
             }
             return binario;
+        }
+
+        public static string EnteroBinario(string strNumero)
+        {
+            double aux;
+            string retorno = "Valor Invalido";
+            if(double.TryParse(strNumero, out aux))
+            {
+            retorno = Numero.EnteroBinario(aux);
+            }
+            
+            return retorno;
         }
 
         public static double operator -(Numero n1, Numero n2)
