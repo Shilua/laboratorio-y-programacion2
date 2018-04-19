@@ -1,0 +1,6 @@
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\bin\Debug\BibliotecaCalculadora.dll
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\bin\Debug\BibliotecaCalculadora.pdb
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.csprojResolveAssemblyReference.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.csproj.CoreCompileInputs.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.dll
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.pdb

@@ -1,0 +1,13 @@
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\bin\Debug\MiCalculadora.exe
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\bin\Debug\MiCalculadora.pdb
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\bin\Debug\BibliotecaCalculadora.dll
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\bin\Debug\BibliotecaCalculadora.pdb
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\obj\Debug\MiCalculadora.csprojResolveAssemblyReference.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\obj\Debug\MiCalculadora.Form1.resources
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\obj\Debug\MiCalculadora.exe
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\tp01\MiCalculadora\obj\Debug\MiCalculadora.pdb

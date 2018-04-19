@@ -4,3 +4,10 @@ C:\Users\alumno\Desktop\Clase1\Clase1\bin\Debug\Clase1.pdb
 C:\Users\alumno\Desktop\Clase1\Clase1\obj\Debug\ejercicio1.csprojResolveAssemblyReference.cache
 C:\Users\alumno\Desktop\Clase1\Clase1\obj\Debug\Clase1.exe
 C:\Users\alumno\Desktop\Clase1\Clase1\obj\Debug\Clase1.pdb
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\Clase1\bin\Debug\Clase1.exe.config
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\Clase1\bin\Debug\Clase1.exe
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\Clase1\bin\Debug\Clase1.pdb
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\Clase1\obj\Debug\ejercicio1.csprojResolveAssemblyReference.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\Clase1\obj\Debug\ejercicio1.csproj.CoreCompileInputs.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\Clase1\obj\Debug\Clase1.exe
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Clase1\Clase1\obj\Debug\Clase1.pdb
