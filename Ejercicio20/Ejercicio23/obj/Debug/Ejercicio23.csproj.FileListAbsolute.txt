@@ -1,0 +1,9 @@
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\bin\Debug\Ejercicio23.exe.config
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\bin\Debug\Ejercicio23.exe
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\bin\Debug\Ejercicio23.pdb
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\obj\Debug\Ejercicio23.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\obj\Debug\Ejercicio23.Form1.resources
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\obj\Debug\Ejercicio23.Properties.Resources.resources
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\obj\Debug\Ejercicio23.csproj.GenerateResource.Cache
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\obj\Debug\Ejercicio23.exe
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio23\obj\Debug\Ejercicio23.pdb
