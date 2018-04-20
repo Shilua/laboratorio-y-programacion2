@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace SistemaDeAtencion
 {
-    class PuestoAtencion
+    public class PuestoAtencion
     {
         #region Fields
         private static int numeroAcutal;

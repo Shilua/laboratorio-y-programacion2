@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaDeAtencion
 {
-    class Negocio
+    public class Negocio
     {
         #region Fields
         private PuestoAtencion caja;
