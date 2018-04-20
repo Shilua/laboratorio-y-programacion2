@@ -1,0 +1,5 @@
+D:\VisualStudio\Ejercicio31\SistemaDeAtencion\obj\Debug\SistemaDeAtencion.csprojResolveAssemblyReference.cache
+D:\VisualStudio\Ejercicio31\SistemaDeAtencion\bin\Debug\SistemaDeAtencion.dll
+D:\VisualStudio\Ejercicio31\SistemaDeAtencion\bin\Debug\SistemaDeAtencion.pdb
+D:\VisualStudio\Ejercicio31\SistemaDeAtencion\obj\Debug\SistemaDeAtencion.dll
+D:\VisualStudio\Ejercicio31\SistemaDeAtencion\obj\Debug\SistemaDeAtencion.pdb
