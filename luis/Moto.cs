@@ -9,6 +9,7 @@ namespace lt_clase8_ex34
 {
     public class Moto : Automovil
     {
+    //prueba
         #region ATRIBUTOS
         public short cilindradas;
         #endregion
