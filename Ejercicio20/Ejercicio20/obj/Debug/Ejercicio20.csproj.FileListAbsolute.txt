@@ -1,0 +1,12 @@
+D:\VisualStudio\Ejercicio20\Ejercicio20\bin\Debug\Ejercicio20.exe.config
+D:\VisualStudio\Ejercicio20\Ejercicio20\bin\Debug\Ejercicio20.exe
+D:\VisualStudio\Ejercicio20\Ejercicio20\bin\Debug\Ejercicio20.pdb
+D:\VisualStudio\Ejercicio20\Ejercicio20\obj\Debug\Ejercicio20.csprojResolveAssemblyReference.cache
+D:\VisualStudio\Ejercicio20\Ejercicio20\obj\Debug\Ejercicio20.exe
+D:\VisualStudio\Ejercicio20\Ejercicio20\obj\Debug\Ejercicio20.pdb
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio20\bin\Debug\Ejercicio20.exe.config
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio20\obj\Debug\Ejercicio20.exe
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio20\obj\Debug\Ejercicio20.pdb
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio20\bin\Debug\Ejercicio20.exe
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio20\bin\Debug\Ejercicio20.pdb
+C:\Users\alumno\Desktop\Ejercicio20\Ejercicio20\obj\Debug\Ejercicio20.csprojResolveAssemblyReference.cache

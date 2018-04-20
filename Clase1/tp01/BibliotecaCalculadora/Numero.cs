@@ -8,13 +8,19 @@ namespace BibliotecaCalculadora
 {
     public class Numero
     {
+        /// <summary>
+        /// Campo numero
+        /// </summary>
         private double numero;
 
+        /// <summary>
+        /// Propiedad que setea el numero
+        /// </summary>
         private string SetNumero
         {
             set
             {
-                this.numero = double.Parse(value);
+                this.numero = ValidarNumero(value);
             }
         }
 
@@ -23,6 +29,10 @@ namespace BibliotecaCalculadora
 
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="numero">Recive un numero y lo asigna</param>
         public Numero(double numero)
         {
             this.numero = numero;
@@ -44,33 +54,55 @@ namespace BibliotecaCalculadora
         /// <returns>retorna un string con el numero decimal</returns>
         public static string BinarioDecimal(string binario)
         {
-            int entero = 0;
-            string returnAux = "Valor Invalido";
+            int Numero = 0;
             for (int i = 1; i <= binario.Length; i++)
             {
-                entero += int.Parse(binario[i - 1].ToString()) * (int)Math.Pow(2, binario.Length - i);
+                Numero += int.Parse(binario[i - 1].ToString()) * (int)Math.Pow(2, binario.Length - i);
             }
 
-            return returnAux;
+            return Numero.ToString();
         }
 
 
         /// <summary>
         /// Convierte un numero entero en un numero binario
         /// </summary>
-        /// <param name="entero">Recibe un numero entero en formato double</param>
+        /// <param name="Numero">Recibe un numero entero en formato double</param>
         /// <returns>retorna un string con el numero binario</returns>
-        public static string EnteroBinario(double entero)
+        public static string DecimalBinario(double Numero)
         {
-            string binario = "Valor Invalido";
-            while (entero >=2)
+            string binario="";
+            while (Numero >=2)
             {
-                binario = (entero % 2).ToString() + binario;
-                entero = (int)entero / 2;
+                binario = (Numero % 2).ToString() + binario;
+                Numero = (int)Numero / 2;
             }
-            return binario;
+            return Numero.ToString()+binario;
         }
 
+        /// <summary>
+        /// Convierte un numero entero en numero binario
+        /// </summary>
+        /// <param name="strNumero">Recibe un string con el numero entero</param>
+        /// <returns>Retorna un string con el numero binario</returns>
+        public static string DecimalBinario(string strNumero)
+        {
+            double aux;
+            string retorno = "Valor Invalido";
+            if(double.TryParse(strNumero, out aux))
+            {
+            retorno = Numero.DecimalBinario(aux);
+            }
+            
+            return retorno;
+        }
+
+        /// <summary>
+        /// Sobrecarga del operador -
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns>retorna un doble con el resultado</returns>
         public static double operator -(Numero n1, Numero n2)
         {
             double retorno = 0;
@@ -78,6 +110,12 @@ namespace BibliotecaCalculadora
             return retorno;
         }
 
+        /// <summary>
+        /// Sobrecarga del operador *
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns>retorna un doble con el resultado</returns>
         public static double operator *(Numero n1, Numero n2)
         {
             double retorno = 0;
@@ -85,6 +123,12 @@ namespace BibliotecaCalculadora
             return retorno;
         }
 
+        /// <summary>
+        /// Sobrecarga del operador /
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns>retorna un doble con el resultado</returns>
         public static double operator /(Numero n1, Numero n2)
         {
             double retorno = 0;
@@ -92,6 +136,12 @@ namespace BibliotecaCalculadora
             return retorno;
         }
 
+        /// <summary>
+        /// Sobrecarga del operador +
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns>retorna un doble con el resultado</returns>
         public static double operator +(Numero n1, Numero n2)
         {
             double retorno = 0;
@@ -99,7 +149,11 @@ namespace BibliotecaCalculadora
             return retorno;
         }
 
-
+        /// <summary>
+        /// Valida que el dato recibido sea un numero
+        /// </summary>
+        /// <param name="strNumero">string con un numero</param>
+        /// <returns>retorna un doble con el numero pasado</returns>
         private static double ValidarNumero(string strNumero)
         {
             double returnDouble = 0;

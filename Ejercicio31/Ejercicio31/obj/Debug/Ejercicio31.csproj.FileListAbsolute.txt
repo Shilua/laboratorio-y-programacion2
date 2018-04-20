@@ -1,0 +1,8 @@
+D:\VisualStudio\Ejercicio31\Ejercicio31\bin\Debug\Ejercicio31.exe.config
+D:\VisualStudio\Ejercicio31\Ejercicio31\bin\Debug\Ejercicio31.exe
+D:\VisualStudio\Ejercicio31\Ejercicio31\bin\Debug\Ejercicio31.pdb
+D:\VisualStudio\Ejercicio31\Ejercicio31\bin\Debug\SistemaDeAtencion.dll
+D:\VisualStudio\Ejercicio31\Ejercicio31\bin\Debug\SistemaDeAtencion.pdb
+D:\VisualStudio\Ejercicio31\Ejercicio31\obj\Debug\Ejercicio31.csprojResolveAssemblyReference.cache
+D:\VisualStudio\Ejercicio31\Ejercicio31\obj\Debug\Ejercicio31.exe
+D:\VisualStudio\Ejercicio31\Ejercicio31\obj\Debug\Ejercicio31.pdb

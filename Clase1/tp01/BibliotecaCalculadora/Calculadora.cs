@@ -8,6 +8,11 @@ namespace BibliotecaCalculadora
 {
     public class Calculadora
     {
+        /// <summary>
+        /// Valida que el operador sea correcto
+        /// </summary>
+        /// <param name="operador">Recibe un string con un operador</param>
+        /// <returns>Retorna el operador, en caso de fallar retorna +</returns>
         private static string ValidarOperador(string operador)
         {
             string str = "+";
@@ -30,6 +35,13 @@ namespace BibliotecaCalculadora
             return str;
         }
 
+        /// <summary>
+        /// Realiza la operacion con los dos tipos de dato numero
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <param name="operador"></param>
+        /// <returns>Retorna un double con el resultado</returns>
         public static double operar(Numero n1, Numero n2, string operador)
         {
             double retorno = 0;

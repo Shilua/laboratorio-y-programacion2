@@ -18,44 +18,76 @@ namespace MiCalculadora
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Cierra el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void cmbOperador_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
+        /// <summary>
+        /// Toma los datos de los textBox y del comboBox y llama a la funcion Operar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            Numero numero1;
-            Numero numero2;
-            string num1, num2, operador;
-            double aux;
-            num1 = txtNumero1.Text;
-            num2 = txtNumero2.Text;
-            numero1 = new Numero(num1);
-            numero2 = new Numero(num2);
+            double resultado;
+            string numero1, numero2, operador;
+            numero1 = txtNumero1.Text;
+            numero2 = txtNumero2.Text;
             operador = cmbOperador.SelectedItem.ToString();
-            aux  = Calculadora.operar(numero1, numero2, operador);
-            lblResultado.Text = aux.ToString();
+            
+            if(operador == "/" && numero2 == "0")
+            {
+                lblResultado.Text = "Error";
+                MessageBox.Show("ERROR NO SE PUEDE DIVIDIR POR 0");
+            }
+            else
+            {
+                resultado = operar(numero1, numero2, operador);
+                lblResultado.Text = resultado.ToString();
+            }
+            
         }
 
+        /// <summary>
+        /// Llama a la funcion limpiar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-
+            limpiar();
         }
 
+        /// <summary>
+        /// Convierte un numero decimal a binario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-
+            if(lblResultado.Text != "")
+            {
+               lblResultado.Text = Numero.DecimalBinario(lblResultado.Text);
+            }
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-
+            if (lblResultado.Text != "")
+            {
+                lblResultado.Text = Numero.BinarioDecimal(lblResultado.Text);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -66,6 +98,26 @@ namespace MiCalculadora
             cmbOperador.Items.Add("*");
             cmbOperador.Items.Add("/");
 
+        }
+
+        private static double operar(string numero1, string numero2, string operador)
+        {
+            double retorno = 0;
+            Numero num1;
+            Numero num2; 
+            num1 = new Numero(numero1);
+            num2 = new Numero(numero2);
+            retorno = Calculadora.operar(num1, num2, operador);
+            
+            return retorno;
+        }
+
+        private void limpiar()
+        {
+            txtNumero1.Text = "";
+            txtNumero2.Text = "";
+            lblResultado.Text = "";
+            cmbOperador.Text = "";
         }
 
         private void txtNumero1_TextChanged(object sender, EventArgs e)
