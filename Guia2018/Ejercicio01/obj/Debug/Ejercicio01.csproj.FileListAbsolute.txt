@@ -5,3 +5,10 @@ C:\Users\Shilua\source\repos\Guia2018\Ejercicio01\obj\Debug\Ejercicio01.csprojRe
 C:\Users\Shilua\source\repos\Guia2018\Ejercicio01\obj\Debug\Ejercicio01.csproj.CoreCompileInputs.cache
 C:\Users\Shilua\source\repos\Guia2018\Ejercicio01\obj\Debug\Ejercicio01.exe
 C:\Users\Shilua\source\repos\Guia2018\Ejercicio01\obj\Debug\Ejercicio01.pdb
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio01\bin\Debug\Ejercicio01.exe.config
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio01\bin\Debug\Ejercicio01.exe
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio01\bin\Debug\Ejercicio01.pdb
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio01\obj\Debug\Ejercicio01.csprojResolveAssemblyReference.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio01\obj\Debug\Ejercicio01.csproj.CoreCompileInputs.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio01\obj\Debug\Ejercicio01.exe
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio01\obj\Debug\Ejercicio01.pdb

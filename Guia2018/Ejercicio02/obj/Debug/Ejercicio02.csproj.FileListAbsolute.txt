@@ -1,0 +1,7 @@
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio02\bin\Debug\Ejercicio02.exe.config
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio02\bin\Debug\Ejercicio02.exe
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio02\bin\Debug\Ejercicio02.pdb
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio02\obj\Debug\Ejercicio02.csprojResolveAssemblyReference.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio02\obj\Debug\Ejercicio02.csproj.CoreCompileInputs.cache
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio02\obj\Debug\Ejercicio02.exe
+E:\apuntes UTNFRA\programacion2\laboratorio-y-programacion2\Guia2018\Ejercicio02\obj\Debug\Ejercicio02.pdb
