@@ -10,3 +10,9 @@ C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2-master\Clase1\tp0
 C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2-master\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.csproj.CoreCompileInputs.cache
 C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2-master\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.dll
 C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2-master\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.pdb
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\bin\Debug\BibliotecaCalculadora.dll
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\bin\Debug\BibliotecaCalculadora.pdb
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.csprojResolveAssemblyReference.cache
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.dll
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\Clase1\tp01\BibliotecaCalculadora\obj\Debug\BibliotecaCalculadora.pdb

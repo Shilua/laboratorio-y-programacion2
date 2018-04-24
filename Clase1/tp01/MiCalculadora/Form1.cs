@@ -97,6 +97,7 @@ namespace MiCalculadora
             cmbOperador.Items.Add("-");
             cmbOperador.Items.Add("*");
             cmbOperador.Items.Add("/");
+            cmbOperador.SelectedIndex = 0;
 
         }
 
