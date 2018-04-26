@@ -50,8 +50,38 @@ namespace LibreriaCentralita
         #region methods
         private float CalcularGanancia(Llamada.TipoLlamadas tipo)
         {
+            Local auxLocal;   
+            Provincial auxProvincial;
+            float retornoLocal = 0;
+            float retornoProvincial = 0;
             float retorno = 0;
-            
+            foreach(Llamada aux in this.Llamadas)
+            {
+                if (aux is Local)
+                {
+                    auxLocal = (Local)aux;
+                    retornoLocal += auxLocal.CostoLlamada;
+                }
+                else if (aux is Provincial)
+                {
+                    auxProvincial = (Provincial)aux;
+                    retornoProvincial += auxProvincial.CostoLlamada;
+                }
+            }
+
+            switch ((int)tipo)
+            { 
+                case 0: //local
+                    retorno = retornoLocal;
+                    break;
+                case 1: //provincial
+                    retorno = retornoProvincial;
+                    break;
+                case 2: //todas
+                    retorno = retornoLocal + retornoProvincial;
+                    break;
+            }
+
             return retorno;
         }
         #endregion
