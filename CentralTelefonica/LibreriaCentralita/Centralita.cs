@@ -18,7 +18,9 @@ namespace LibreriaCentralita
         {
             get
             {
-                return 2;
+                float retorno;
+                retorno = this.CalcularGanancia(Llamada.TipoLlamadas.Local);
+                return retorno;
             }
         }
 
@@ -26,7 +28,9 @@ namespace LibreriaCentralita
         {
             get
             {
-                return 2;
+                float retorno;
+                retorno = this.CalcularGanancia(Llamada.TipoLlamadas.Provincial);
+                return retorno;
             }
         }
 
@@ -34,7 +38,9 @@ namespace LibreriaCentralita
         {
             get
             {
-                return 2;
+                float retorno;
+                retorno = this.CalcularGanancia(Llamada.TipoLlamadas.Todas);
+                return retorno;
             }
         }
 
@@ -84,6 +90,25 @@ namespace LibreriaCentralita
 
             return retorno;
         }
+
+        public Centralita()
+        {
+           this.listaDeLlamadas = new List<Llamada>();
+        }
+
+        public Centralita(string nombreEmpresa) 
+        {
+            this.razonSocial = nombreEmpresa;
+        }
+
+        public string mostrar()
+        {
+            string retorno = "";
+
+
+            return retorno;
+        }
+
         #endregion
     }
 }
