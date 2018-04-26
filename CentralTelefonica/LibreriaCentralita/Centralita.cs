@@ -107,8 +107,9 @@ namespace LibreriaCentralita
             Local auxLocal;
             Provincial auxProvincial;
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Ganancia Total: {0} Ganancia por Local {1} Ganancia por Provincial {2} ", this.GananciasPorTotal, this.GananciasPorLocal, this. GananciasPorProvincial);
+            sb.AppendFormat("Ganancia Total: {0} Ganancia por Local {1} Ganancia por Provincial {2} ", this.GananciasPorTotal, this.GananciasPorLocal, this. GananciasPorProvincial);            
             sb.AppendLine("");
+            sb.AppendLine("--------------------------------------------");
             foreach(Llamada aux in this.Llamadas)
             {
                 if(aux is Local)
