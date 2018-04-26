@@ -1,1 +1,7 @@
 D:\repository\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\LibreriaCentralita\obj\Debug\LibreriaCentralita.csprojResolveAssemblyReference.cache
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\LibreriaCentralita\bin\Debug\LibreriaCentralita.dll
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\LibreriaCentralita\bin\Debug\LibreriaCentralita.pdb
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\LibreriaCentralita\obj\Debug\LibreriaCentralita.csprojResolveAssemblyReference.cache
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\LibreriaCentralita\obj\Debug\LibreriaCentralita.csproj.CoreCompileInputs.cache
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\LibreriaCentralita\obj\Debug\LibreriaCentralita.dll
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\LibreriaCentralita\obj\Debug\LibreriaCentralita.pdb

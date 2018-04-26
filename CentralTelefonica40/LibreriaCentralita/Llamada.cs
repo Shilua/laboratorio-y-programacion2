@@ -57,7 +57,7 @@ namespace LibreriaCentralita
             return retorno;
         }
 
-        public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
+        public int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
         {
             int retorno = 0;
 

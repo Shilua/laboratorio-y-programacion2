@@ -4,3 +4,12 @@ D:\repository\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTel
 D:\repository\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\obj\Debug\CentralitaHerencia.csprojResolveAssemblyReference.cache
 D:\repository\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\obj\Debug\CentralTelefonica.exe
 D:\repository\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\obj\Debug\CentralTelefonica.pdb
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\bin\Debug\CentralTelefonica.exe.config
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\bin\Debug\CentralTelefonica.exe
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\bin\Debug\CentralTelefonica.pdb
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\bin\Debug\LibreriaCentralita.dll
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\bin\Debug\LibreriaCentralita.pdb
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\obj\Debug\CentralitaHerencia.csprojResolveAssemblyReference.cache
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\obj\Debug\CentralitaHerencia.csproj.CoreCompileInputs.cache
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\obj\Debug\CentralTelefonica.exe
+C:\Users\Shilua\Documents\facultad\laboratorio-y-programacion2\laboratorio-y-programacion2\CentralTelefonica\CentralTelefonica\obj\Debug\CentralTelefonica.pdb

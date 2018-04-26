@@ -131,7 +131,7 @@ namespace LibreriaCentralita
 
         public void OrdenarLlamadas()
         {
-            this.Llamadas.Sort(Llamada.OrdenarPorDuracion);
+            this.Llamadas.Sort();
         }
         #endregion
     }
