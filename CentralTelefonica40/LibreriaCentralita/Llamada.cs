@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaCentralita
 {
-    public class Llamada
+    public abstract class Llamada
     {
         #region Fields
         protected float duracion;
@@ -15,6 +15,13 @@ namespace LibreriaCentralita
         #endregion
 
         #region properties
+
+        public abstract float CostoLlamada
+        {
+            get;
+        }
+
+
         public float Duracion
         {
             get
@@ -48,7 +55,7 @@ namespace LibreriaCentralita
             this.nroOrigen = nroOrigen;
         }
 
-        public string Mostrar()
+        protected virtual string Mostrar()
         {
             string retorno = "";
             StringBuilder sb = new StringBuilder();
@@ -57,7 +64,32 @@ namespace LibreriaCentralita
             return retorno;
         }
 
-        public int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
+        public static bool operator ==(Llamada l1, Llamada l2)
+        {
+            bool retorno = false;
+
+            if(!object.ReferenceEquals(l1,null)&& !object.ReferenceEquals(l2,null))
+            {
+                if (l1.Equals(l2))
+                { 
+                    if(object.Equals(l1.nroDestino,l2.nroDestino)&&object.Equals(l1.nroOrigen,l2.nroOrigen))
+                retorno = true;
+                }
+                    
+            }
+
+            return retorno;
+        }
+
+        public static bool operator !=(Llamada l1, Llamada l2)
+        {
+            bool retorno = false;
+            if (!(l1 == l2))
+                retorno = true;
+            return retorno;
+        }
+
+        public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
         {
             int retorno = 0;
 

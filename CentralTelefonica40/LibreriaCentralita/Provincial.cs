@@ -13,7 +13,7 @@ namespace LibreriaCentralita
         #endregion
 
         #region properties
-        public float CostoLlamada
+        public override float CostoLlamada
         {
             get
             {
@@ -42,6 +42,14 @@ namespace LibreriaCentralita
             return retorno;
         }
 
+        public override bool Equals(object obj)
+        {
+            bool retorno = false;
+            if (obj is Provincial)
+                retorno = true;
+ 	        return retorno;
+        }
+
         public Provincial(string origen, Franja miFranja, float duracion, string destino) 
             :base(duracion,destino,origen)
         {
@@ -53,13 +61,18 @@ namespace LibreriaCentralita
         {
         }
 
-        public string Mostrar()
+        protected override string Mostrar()
         {
             string retorno = "";
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("{0} Costo: {1}", base.Mostrar(), this.CostoLlamada);
             retorno = sb.ToString();
             return retorno;
+        }
+
+        public override string ToString()
+        {
+            return this.Mostrar();
         }
         #endregion
 

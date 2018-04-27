@@ -54,6 +54,12 @@ namespace LibreriaCentralita
         #endregion
 
         #region methods
+
+        private void AgregarLlamada(Llamada nuevaLlamada)
+        {
+            this.listaDeLlamadas.Add(nuevaLlamada);
+        }
+
         private float CalcularGanancia(Llamada.TipoLlamadas tipo)
         {
             Local auxLocal;   
@@ -101,37 +107,80 @@ namespace LibreriaCentralita
             this.razonSocial = nombreEmpresa;
         }
 
-        public string Mostrar()
+        private string Mostrar()
         {
             string retorno = "";
             Local auxLocal;
             Provincial auxProvincial;
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Ganancia Total: {0} Ganancia por Local {1} Ganancia por Provincial {2} ", this.GananciasPorTotal, this.GananciasPorLocal, this. GananciasPorProvincial);
+            sb.AppendFormat("Ganancia Total: {0} Ganancia por Local {1} Ganancia por Provincial {2} ", this.GananciasPorTotal, this.GananciasPorLocal, this. GananciasPorProvincial);            
             sb.AppendLine("");
+            sb.AppendLine("--------------------------------------------");
             foreach(Llamada aux in this.Llamadas)
             {
-                if(aux is Local)
-                {
-                    auxLocal = (Local)aux;
-                    sb.AppendFormat("{0}", auxLocal.Mostrar());
-                    sb.AppendLine("");
-                }
-                else
-                {
-                    auxProvincial = (Provincial)aux;
-                    sb.AppendFormat("{0}", auxProvincial.Mostrar());
-                    sb.AppendLine("");
-                }
+                //if(aux is Local)
+                //{
+                //    auxLocal = (Local)aux;
+                //    sb.AppendFormat("{0}", auxLocal.ToString());
+                //    sb.AppendLine("");
+                //}
+                //else
+                //{
+                //    auxProvincial = (Provincial)aux;
+                //    sb.AppendFormat("{0}", auxProvincial.ToString());
+                //    sb.AppendLine("");
+                //}
+                sb.AppendFormat("{0}", aux.ToString());
+                sb.AppendLine("");
             }
 
             retorno = sb.ToString();
             return retorno;
         }
 
+        public static bool operator ==(Centralita c, Llamada llamada)
+        {
+            bool retorno = false;
+
+            foreach (Llamada aux in c.Llamadas)
+            {
+                if (aux == llamada)
+                {
+                    retorno = true;
+                    break;
+                }
+            }
+
+            return retorno;
+        }
+
+        public static bool operator !=(Centralita c, Llamada llamada)
+        {
+            bool retorno = false;
+            if (!(c == llamada))
+                retorno = true;
+            return retorno;
+        }
+
+     public static Centralita operator +(Centralita c, Llamada nuevaLlamada)
+        {
+            foreach(Llamada aux in c.Llamadas)
+            {
+             if (nuevaLlamada == aux)
+                return c;
+            }
+            c.AgregarLlamada(nuevaLlamada);
+            return c;
+        }
+
         public void OrdenarLlamadas()
         {
-            this.Llamadas.Sort();
+            this.Llamadas.Sort(Llamada.OrdenarPorDuracion);
+        }
+
+        public override string ToString()
+        {
+            return this.Mostrar();
         }
         #endregion
     }
