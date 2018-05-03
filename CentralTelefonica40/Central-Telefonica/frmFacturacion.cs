@@ -14,6 +14,15 @@ namespace Central_Telefonica
     public partial class frmFacturacion : Form
     {
         private Centralita central;
+        private string opcion;
+
+        public string Opcion
+        {
+            set
+            {
+                this.opcion = value;
+            }
+        }
 
         public Centralita Central
         {
@@ -30,7 +39,20 @@ namespace Central_Telefonica
 
         private void frmFacturacion_Load(object sender, EventArgs e)
         {
-            rchtFacturacion.Text = central.ToString();
+            switch(opcion)
+            {
+                case "total":
+                    rchtFacturacion.Text = "Facturacion total: "+central.GananciasPorTotal.ToString();
+                    break;
+                case "local":
+                    rchtFacturacion.Text = "Facturacion local: " + central.GananciasPorLocal.ToString();
+                    break;
+                case "provincial":
+                    rchtFacturacion.Text = "Facturacion provincial: " + central.GananciasPorProvincial.ToString();
+                    break;
+            }
+                
+            
         }
     }
 }

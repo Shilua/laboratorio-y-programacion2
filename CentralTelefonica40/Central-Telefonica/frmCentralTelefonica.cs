@@ -36,18 +36,23 @@ namespace Central_Telefonica
         {
             frmFacturacion frm = new frmFacturacion();
             frm.Central = this.central;
+            frm.Opcion = "total";
             frm.ShowDialog();
         }
 
         private void btnFacturacionLocal_Click(object sender, EventArgs e)
         {
             frmFacturacion frm = new frmFacturacion();
+            frm.Central = this.central;
+            frm.Opcion = "local";
             frm.ShowDialog();
         }
 
         private void btnFacturacionProvincial_Click(object sender, EventArgs e)
         {
             frmFacturacion frm = new frmFacturacion();
+            frm.Central = this.central;
+            frm.Opcion = "provincial";
             frm.ShowDialog();
         }
 
