@@ -110,26 +110,12 @@ namespace LibreriaCentralita
         private string Mostrar()
         {
             string retorno = "";
-            Local auxLocal;
-            Provincial auxProvincial;
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("Ganancia Total: {0} Ganancia por Local {1} Ganancia por Provincial {2} ", this.GananciasPorTotal, this.GananciasPorLocal, this. GananciasPorProvincial);            
             sb.AppendLine("");
             sb.AppendLine("--------------------------------------------");
             foreach(Llamada aux in this.Llamadas)
             {
-                //if(aux is Local)
-                //{
-                //    auxLocal = (Local)aux;
-                //    sb.AppendFormat("{0}", auxLocal.ToString());
-                //    sb.AppendLine("");
-                //}
-                //else
-                //{
-                //    auxProvincial = (Provincial)aux;
-                //    sb.AppendFormat("{0}", auxProvincial.ToString());
-                //    sb.AppendLine("");
-                //}
                 sb.AppendFormat("{0}", aux.ToString());
                 sb.AppendLine("");
             }

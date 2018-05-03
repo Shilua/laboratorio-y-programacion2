@@ -69,6 +69,21 @@ namespace BibliotecaEmpresa
             this.Ganancia = ganancia;
         }
 
+        public Empresa operator +(Empresa em, Empleado e1)
+        {
+            if (!object.ReferenceEquals(em, null) && !object.ReferenceEquals(e1, null))
+            {
+                foreach (Empleado aux in em.nominaEmpleados)
+                {
+                    if (aux == e1)
+                    {
+                        return em;
+                    }
+                }
+            }
+            em.nominaEmpleados.Add(e1);
+            return em;
+        }
 
         #endregion
 

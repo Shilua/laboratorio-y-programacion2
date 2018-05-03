@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralitaHerencia", "Centr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaCentralita", "LibreriaCentralita\LibreriaCentralita.csproj", "{6DABCA67-6FA8-4709-8BD3-174DE5F416A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Central-Telefonica", "Central-Telefonica\Central-Telefonica.csproj", "{EBA2E2A3-712C-4E93-ACFE-C10F8411EE52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{6DABCA67-6FA8-4709-8BD3-174DE5F416A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DABCA67-6FA8-4709-8BD3-174DE5F416A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DABCA67-6FA8-4709-8BD3-174DE5F416A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA2E2A3-712C-4E93-ACFE-C10F8411EE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA2E2A3-712C-4E93-ACFE-C10F8411EE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA2E2A3-712C-4E93-ACFE-C10F8411EE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA2E2A3-712C-4E93-ACFE-C10F8411EE52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
