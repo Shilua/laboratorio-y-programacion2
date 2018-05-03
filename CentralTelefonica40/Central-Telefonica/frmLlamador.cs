@@ -121,13 +121,13 @@ namespace Central_Telefonica
                 Provincial.Franja franjas;
                 Enum.TryParse<Provincial.Franja>(cmbFranja.SelectedValue.ToString(), out franjas);
                 Provincial llamadaProvincial = new Provincial(txtNroOrigen.Text, franjas, 30, txtBox.Text);
-                central.Llamadas.Add(llamadaProvincial);
+                central += llamadaProvincial;
                 
             }
             else
             {
                 Local llamadaLocal = new Local(txtNroOrigen.Text, 30, txtBox.Text, 2.65f);
-                central.Llamadas.Add(llamadaLocal);
+                central += llamadaLocal;
             }
         }
 
