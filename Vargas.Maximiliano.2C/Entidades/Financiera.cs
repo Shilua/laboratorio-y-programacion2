@@ -146,6 +146,7 @@ namespace EntidadFinanciera
             foreach (Prestamo aux in financiera.ListaPrestamos)
             {
                 sb.AppendFormat("{0}", aux.Mostrar());
+                sb.AppendLine("");
             }
             return sb.ToString();
         }

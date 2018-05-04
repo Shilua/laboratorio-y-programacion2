@@ -54,7 +54,7 @@ namespace PrestamosPersonales
         {
             string retorno = "";
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Monto: {0} Vencimiento : {1}", this.Monto, this.Vencimiento.ToString());
+            sb.AppendFormat("Monto: {0} Vencimiento : {1}", this.Monto, this.Vencimiento.Date.ToString("MM/dd/yyyy"));
             retorno = sb.ToString();
             return retorno;
         }
