@@ -131,6 +131,11 @@ namespace Central_Telefonica
             }
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         
        
     }

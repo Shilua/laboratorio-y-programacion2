@@ -48,8 +48,6 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtNroOrigen = new System.Windows.Forms.TextBox();
             this.cmbFranja = new System.Windows.Forms.ComboBox();
-          //  this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            //this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -242,6 +240,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(140, 191);
             this.flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // txtNroOrigen
             // 
@@ -263,23 +262,6 @@
             this.cmbFranja.TabIndex = 7;
             this.cmbFranja.SelectedIndexChanged += new System.EventHandler(this.cmbFranja_SelectedIndexChanged);
             // 
-            // shapeContainer1
-            // 
-            /*this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(283, 342);
-            this.shapeContainer1.TabIndex = 8;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.Location = new System.Drawing.Point(9, 72);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(149, 199);
-            //*/ 
             // frmLlamador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,7 +275,6 @@
             this.Controls.Add(this.btnLlamar);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.txtBox);
-            //this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmLlamador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -327,7 +308,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TextBox txtNroOrigen;
         private System.Windows.Forms.ComboBox cmbFranja;
-       // private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-       // private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
+        
     }
 }
