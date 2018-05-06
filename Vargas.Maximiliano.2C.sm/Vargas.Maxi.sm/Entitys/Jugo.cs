@@ -39,7 +39,7 @@ namespace Entidades
         {
             string retorno;
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0}", (string)this);
+            sb.AppendLine(this);
             sb.AppendLine("");
             sb.AppendFormat("Sabor :{0}", this.sabor.ToString());
             sb.AppendLine("");

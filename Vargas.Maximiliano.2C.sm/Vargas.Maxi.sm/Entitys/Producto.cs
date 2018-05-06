@@ -69,12 +69,12 @@ namespace Entidades
             return retorno;
         }
 
-        public static implicit operator int(Producto p)
+        public static explicit operator int(Producto p)
         {
             return p.codigoDeBarra;
         }
 
-        public static explicit operator string(Producto p)
+        public static implicit operator string(Producto p)
         {
             return p.MostrarProducto(p);
         }
