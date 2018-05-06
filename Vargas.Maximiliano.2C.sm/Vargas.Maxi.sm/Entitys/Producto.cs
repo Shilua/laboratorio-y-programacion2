@@ -65,7 +65,6 @@ namespace Entidades
             sb.AppendFormat("Codigo De Barra: {0}", (int)p);
             sb.AppendLine("");
             sb.AppendFormat("Precio: {0}", p.Precio);
-            sb.AppendLine("");
             retorno = sb.ToString();
             return retorno;
         }
