@@ -9,10 +9,10 @@ namespace Entidades
     public class Equipo
     {
         #region Fields
-        static Deportes deporte;
-        DirectorTecnico dt;
-        List<Jugador> jugadores;
-        string nombre;
+        private static Deportes deporte;
+        private DirectorTecnico dt;
+        private List<Jugador> jugadores;
+        private string nombre;
         #endregion
         #region Propetries
         public Deportes Deporte
@@ -98,13 +98,13 @@ namespace Entidades
             string retorno;
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("{0} {1}", e.nombre, e.Deporte.ToString());
+            sb.AppendLine("");
             sb.AppendLine("Nomina de jugadores");
             foreach(Jugador jugador in e.jugadores)
             {
                 sb.AppendLine(jugador.ToString());
             }
             sb.AppendFormat("Dirigido por: {0}", e.dt.ToString());
-            sb.AppendLine("");
             retorno = sb.ToString();
             return retorno;
         }

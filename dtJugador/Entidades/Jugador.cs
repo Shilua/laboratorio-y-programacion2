@@ -64,7 +64,6 @@ namespace Entidades
                 sb.Append("capitán del equipo ");
             }
             sb.AppendFormat("Numero de camiseta {0}", (int)this);
-            sb.AppendLine("");
             retorno = sb.ToString();
             return retorno;
         }
