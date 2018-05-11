@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{021A5A68-5985-4200-93FF-E88764C1BD02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistaConsola", "VistaConsola\VistaConsola.csproj", "{470F931D-1EFF-424F-9C84-F7F9B117325F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistaForm", "VistaForm\VistaForm.csproj", "{73B62D74-E0B8-404D-9C71-25841542D016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{021A5A68-5985-4200-93FF-E88764C1BD02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021A5A68-5985-4200-93FF-E88764C1BD02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021A5A68-5985-4200-93FF-E88764C1BD02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021A5A68-5985-4200-93FF-E88764C1BD02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470F931D-1EFF-424F-9C84-F7F9B117325F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470F931D-1EFF-424F-9C84-F7F9B117325F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470F931D-1EFF-424F-9C84-F7F9B117325F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470F931D-1EFF-424F-9C84-F7F9B117325F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B62D74-E0B8-404D-9C71-25841542D016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B62D74-E0B8-404D-9C71-25841542D016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B62D74-E0B8-404D-9C71-25841542D016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B62D74-E0B8-404D-9C71-25841542D016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
