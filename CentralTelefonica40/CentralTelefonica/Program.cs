@@ -30,14 +30,20 @@ namespace CentralitaHerencia
             //Console.WriteLine(c.Mostrar());
             //c.OrdenarLlamadas();
             //Console.WriteLine(c.Mostrar());
-
-            c += l1;
+                c += l1;
             Console.WriteLine(c.ToString());
             c += l2;
             Console.WriteLine(c.ToString());
             c += l3;
             Console.WriteLine(c.ToString());
+            try
+            {
             c += l4;
+            }
+            catch (CentralitaExeption e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.WriteLine(c.ToString());
             c.OrdenarLlamadas();
             Console.WriteLine(c.ToString());

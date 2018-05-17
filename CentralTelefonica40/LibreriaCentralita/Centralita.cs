@@ -150,13 +150,16 @@ namespace LibreriaCentralita
 
      public static Centralita operator +(Centralita c, Llamada nuevaLlamada)
         {
-            foreach(Llamada aux in c.Llamadas)
+
+            if (c == nuevaLlamada)
+            {                
+                throw new CentralitaExeption("No cargo la llamada\n", "Centralita", "operator +");
+            }
+            else
             {
-             if (nuevaLlamada == aux)
+                c.AgregarLlamada(nuevaLlamada);
                 return c;
             }
-            c.AgregarLlamada(nuevaLlamada);
-            return c;
         }
 
         public void OrdenarLlamadas()
