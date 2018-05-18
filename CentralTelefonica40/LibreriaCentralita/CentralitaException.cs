@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaCentralita
 {
-    public class CentralitaExeption : Exception
+    public class CentralitaException : Exception
     {
         #region Fields
         private string nombreClase;
@@ -32,13 +32,13 @@ namespace LibreriaCentralita
         #endregion
 
         #region Methods
-        public CentralitaExeption(string mensaje, string clase, string metodo)
+        public CentralitaException(string mensaje, string clase, string metodo)
             :this(mensaje,clase,metodo,null)
         {
 
         }
 
-        public CentralitaExeption(string mensaje, string clase, string metodo, Exception innerException)
+        public CentralitaException(string mensaje, string clase, string metodo, Exception innerException)
             :base(mensaje,innerException)
         {
             this.nombreClase = clase;

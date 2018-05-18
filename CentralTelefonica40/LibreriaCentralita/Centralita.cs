@@ -153,7 +153,7 @@ namespace LibreriaCentralita
 
             if (c == nuevaLlamada)
             {                
-                throw new CentralitaExeption("No cargo la llamada\n", "Centralita", "operator +");
+                throw new CentralitaException("No cargo la llamada\n", "Centralita", "operator +");
             }
             else
             {

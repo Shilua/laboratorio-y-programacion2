@@ -11,6 +11,7 @@ namespace CentralitaHerencia
     {
         static void Main(string[] args)
         {
+            
             // Mi central
             Centralita c = new Centralita("Fede Center");
             // Mis 4 llamadas
@@ -30,17 +31,38 @@ namespace CentralitaHerencia
             //Console.WriteLine(c.Mostrar());
             //c.OrdenarLlamadas();
             //Console.WriteLine(c.Mostrar());
+            try
+            {
                 c += l1;
+            }
+            catch (CentralitaException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.WriteLine(c.ToString());
+            try
+            {
             c += l2;
+            }
+            catch (CentralitaException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.WriteLine(c.ToString());
+            try
+            {
             c += l3;
+            }
+            catch (CentralitaException e)
+            {
+                Console.WriteLine(e.Message);
+            }   
             Console.WriteLine(c.ToString());
             try
             {
             c += l4;
             }
-            catch (CentralitaExeption e)
+            catch (CentralitaException e)
             {
                 Console.WriteLine(e.Message);
             }
