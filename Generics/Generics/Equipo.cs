@@ -17,7 +17,7 @@ namespace Generics
             this.fechaCreacion = fechaCreacion;
         }
 
-        public string Ficha()
+        public virtual string Ficha()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("[{0}] Fundado el [{0}]",this.nombre, this.fechaCreacion.ToString("dd-mm-yyyy"));
@@ -28,6 +28,7 @@ namespace Generics
         {
             if (object.Equals(e1.nombre, e2.nombre) && object.Equals(e1.fechaCreacion, e2.fechaCreacion))
                 return true;
+            
             return false;
         }
 
@@ -35,8 +36,9 @@ namespace Generics
         {
             if (!(e1 == e2))
                 return true;
+
             return false;
-            return true;
+           
         }
     }
 }

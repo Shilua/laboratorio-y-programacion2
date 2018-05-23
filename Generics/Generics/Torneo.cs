@@ -43,6 +43,11 @@ namespace Generics
             
             return false;
         }
+        
+        private string CalcularPartido(T equipo1,T equipo2)
+        {
+            return "algo";
+        }
 
         public static Torneo<T> operator +(Torneo<T> torneo, T equipo)
         {
