@@ -11,6 +11,11 @@ namespace Generics
         protected string nombre;
         protected DateTime fechaCreacion;
 
+        public string Nombre
+        {
+            get { return this.nombre; }
+        }
+
         public Equipo(string nombre, DateTime fechaCreacion)
         {
             this.nombre = nombre;
@@ -20,7 +25,7 @@ namespace Generics
         public virtual string Ficha()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("[{0}] Fundado el [{0}]",this.nombre, this.fechaCreacion.ToString("dd-mm-yyyy"));
+            sb.AppendFormat("[{0}] Fundado el [{1}]",this.nombre, this.fechaCreacion.ToString("dd-MM-yyyy"));
             return sb.ToString();
         }
 

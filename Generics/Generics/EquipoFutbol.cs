@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    class EquipoFutbol : Equipo
+    public class EquipoFutbol : Equipo
     {
         public EquipoFutbol(string nombre, DateTime fechaCreacion)
             :base(nombre,fechaCreacion)
