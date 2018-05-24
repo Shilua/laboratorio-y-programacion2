@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2626784D-6B78-4E72-93F0-A5AF1B5BED47}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{293B4F8C-3C63-4FC8-980C-9BD92C88E913}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Torneo</RootNamespace>
-    <AssemblyName>Torneo</AssemblyName>
+    <RootNamespace>Generics48</RootNamespace>
+    <AssemblyName>Generics48</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,21 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Torneos.cs" />
+    <Compile Include="Contabilidad.cs" />
+    <Compile Include="Documento.cs" />
+    <Compile Include="Factura.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Generics48\Generics48.csproj">
-      <Project>{293b4f8c-3c63-4fc8-980c-9bd92c88e913}</Project>
-      <Name>Generics48</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Generics\Generics.csproj">
-      <Project>{11789e9a-1bf5-49a4-9afc-e09f0573e34d}</Project>
-      <Name>Generics</Name>
-    </ProjectReference>
+    <Compile Include="Recibo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
