@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces50", "Interfaces\Interfaces50.csproj", "{94C291AF-0C51-478C-AC7D-FBA3E9CB8FAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces52", "Interfaces52\Interfaces52.csproj", "{B8E259CF-4128-4FFE-83CB-092C4B27FD94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testLapizBoligrafo", "testLapizBoligrafo\testLapizBoligrafo.csproj", "{582311EE-0732-4139-ACF1-ACC655DCD2CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94C291AF-0C51-478C-AC7D-FBA3E9CB8FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C291AF-0C51-478C-AC7D-FBA3E9CB8FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C291AF-0C51-478C-AC7D-FBA3E9CB8FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C291AF-0C51-478C-AC7D-FBA3E9CB8FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E259CF-4128-4FFE-83CB-092C4B27FD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E259CF-4128-4FFE-83CB-092C4B27FD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E259CF-4128-4FFE-83CB-092C4B27FD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E259CF-4128-4FFE-83CB-092C4B27FD94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582311EE-0732-4139-ACF1-ACC655DCD2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582311EE-0732-4139-ACF1-ACC655DCD2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582311EE-0732-4139-ACF1-ACC655DCD2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582311EE-0732-4139-ACF1-ACC655DCD2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
