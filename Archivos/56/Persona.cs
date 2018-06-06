@@ -34,7 +34,7 @@ namespace _56
             writer = new XmlTextWriter(strw.ToString(), Encoding.UTF8);
             ser = new XmlSerializer(typeof(Persona));
             try
-            {  
+            {
                 ser.Serialize(writer, p1);
             }
             catch (Exception e)
@@ -45,7 +45,13 @@ namespace _56
             {
                 writer.Close();
             }
-
         }
+
+            public override string ToString()
+        {
+            return base.ToString();
+        }
+
+    }
     }
 }
