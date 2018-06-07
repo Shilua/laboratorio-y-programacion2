@@ -11,7 +11,7 @@ namespace Archivos57
 {
     public class Persona
     {
-        private string nombre;
+        public string nombre;
         private string apellido;
 
 
@@ -32,21 +32,29 @@ namespace Archivos57
             {
                 XmlTextWriter writer;
                 XmlSerializer ser;
-                //StreamWriter strw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
-                writer = new XmlTextWriter(@".\a.xml", Encoding.UTF8);
+                StreamWriter strw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @".\archivo2.xml");
+                writer = new XmlTextWriter(strw.ToString(), Encoding.UTF8);
                 ser = new XmlSerializer(typeof(Persona));
                 ser.Serialize(writer, p1);
                 writer.Close();
+            }            
+            catch (InvalidOperationException e)//no tiene constructor sin parametros
+            {
+                throw e;
+            }
+            catch(ArgumentException e)//el path esta mal
+            {
+                throw e;
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                throw e;
             }
         }
 
         public static Persona Cargar()
         {
-            Persona persona = new Persona();
+            Persona persona = new Persona("saraza","perez");
             try
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(Persona));
