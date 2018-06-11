@@ -12,7 +12,7 @@ namespace Archivos57
     public class Persona
     {
         public string nombre;
-        private string apellido;
+        public string apellido;
 
 
 
@@ -32,8 +32,8 @@ namespace Archivos57
             {
                 XmlTextWriter writer;
                 XmlSerializer ser;
-                StreamWriter strw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @".\archivo2.xml");
-                writer = new XmlTextWriter(strw.ToString(), Encoding.UTF8);
+                //StreamWriter strw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\archivo2.xml");
+                writer = new XmlTextWriter("C:\\Users\\taller\\Desktop\\Archivo2.xml", Encoding.UTF8);
                 ser = new XmlSerializer(typeof(Persona));
                 ser.Serialize(writer, p1);
                 writer.Close();
@@ -54,17 +54,18 @@ namespace Archivos57
 
         public static Persona Cargar()
         {
-            Persona persona = new Persona("saraza","perez");
+            Persona persona = new Persona();
             try
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(Persona));
-                XmlTextReader reader = new XmlTextReader(@".\a.xml");
+                StreamWriter strw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\archivo2.xml");
+                XmlTextReader reader = new XmlTextReader(strw.ToString());
                 persona = (Persona)serializer.Deserialize(reader);
                 reader.Close();
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                throw e;
             }
             return persona;
         }

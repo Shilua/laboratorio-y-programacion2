@@ -14,9 +14,9 @@ namespace Archivos57
 
                 Persona p1 = new Persona("juan", "perez");
                 Persona.Guardar(p1);
-                //Persona p2 = Persona.Cargar();
-                //Console.WriteLine(p2.ToString());
-                Console.ReadKey();
+            Persona p2 = Persona.Cargar();
+            Console.WriteLine(p2.ToString());
+            Console.ReadKey();
         }
     }
 }
