@@ -8,6 +8,15 @@ namespace Negocios
 {
     public class Caja
     {
-        List<string> filaClientes;
+        private List<string> filaClientes;
+
+        public List<string> FilaClientes
+        {
+            get
+            {
+                return this.filaClientes;
+            }
+        }
+
     }
 }
