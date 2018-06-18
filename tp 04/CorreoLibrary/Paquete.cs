@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Paquete :  IMostrar<T>
+    public class Paquete  : IMostrar<Paquete> 
     {
 
         #region Field
@@ -53,9 +53,58 @@ namespace Entidades
             }
         }
 
+
+
         #endregion
 
+
         #region Methods
+
+        public Paquete(string direccionEntrega, string trackingID)
+        {
+            this.DireccionEntrega = direccionEntrega;
+            this.TrackingID = trackingID;
+        }
+
+        public void MockCicloDeVida()
+        {
+            
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("Direccion entrega: {0}", this.DireccionEntrega);
+            sb.AppendLine();
+            sb.AppendFormat("Tracking ID: {0}", this.TrackingID);
+            sb.AppendLine();
+            sb.AppendFormat("Eestado: {0}", this.Estado);
+            sb.AppendLine();
+            return sb.ToString();
+        }
+
+        public static bool operator ==(Paquete p1, Paquete p2)
+        {
+            if(p1.TrackingID == p2.TrackingID)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool operator !=(Paquete p1, Paquete p2)
+        {
+            if(p1 == p2)
+            {
+                return false;
+            }
+            return true;
+        }
+        public string MostrarDatos(Paquete elemento)
+        {
+
+            return string.Format("{0} para {1} ({2})", elemento.TrackingID,elemento.DireccionEntrega,elemento.Estado);
+        }
 
         #endregion
 
@@ -65,8 +114,11 @@ namespace Entidades
         #region Nested Types
         public enum EEstado
         {
-
+            ingresado,
+            en_viaje,
+            entregado
         }
+
         #endregion
 
     }
