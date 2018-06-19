@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Entidades
@@ -64,11 +65,25 @@ namespace Entidades
         {
             this.DireccionEntrega = direccionEntrega;
             this.TrackingID = trackingID;
+            this.Estado = EEstado.ingresado;
         }
 
         public void MockCicloDeVida()
         {
-            
+            do
+            {
+                Thread.Sleep(1000);
+                if(this.Estado == EEstado.ingresado)
+                {
+                    this.Estado = EEstado.en_viaje;
+                }
+                else
+                {
+                    this.Estado = EEstado.entregado;
+                }
+                //informar estado
+            } while (this.Estado != EEstado.entregado);
+            //guardar en la base
         }
 
         public override string ToString()
@@ -98,7 +113,7 @@ namespace Entidades
             {
                 return false;
             }
-            return true;
+            return true;           
         }
         public string MostrarDatos(Paquete elemento)
         {

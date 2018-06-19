@@ -47,9 +47,14 @@ namespace Entidades
             }
             return c;
         }
-        public string MostrarDatos(List<Paquete> elemento)
+        public string  MostrarDatos(List<Paquete> elemento)
         {
-            throw new NotImplementedException();
+            string retorno = "";
+            foreach(Paquete aux in elemento)
+            {
+                retorno += aux.MostrarDatos(aux);
+            }
+            return retorno;
         }
 
         #endregion
