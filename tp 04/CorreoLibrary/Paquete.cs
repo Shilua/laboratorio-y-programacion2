@@ -83,19 +83,20 @@ namespace Entidades
                 }
                 //informar estado
             } while (this.Estado != EEstado.entregado);
-            //guardar en la base
+            try
+            {
+                PaqueteDAO.Insertar(this);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Direccion entrega: {0}", this.DireccionEntrega);
-            sb.AppendLine();
-            sb.AppendFormat("Tracking ID: {0}", this.TrackingID);
-            sb.AppendLine();
-            sb.AppendFormat("Eestado: {0}", this.Estado);
-            sb.AppendLine();
-            return sb.ToString();
+            
+            return this.MostrarDatos(this);
         }
 
         public static bool operator ==(Paquete p1, Paquete p2)
@@ -124,6 +125,9 @@ namespace Entidades
         #endregion
 
         #region Events
+        public delegate void DelegadoInformarEstado(string estado);
+        public event DelegadoInformarEstado InformarEstado;
+
         #endregion
 
         #region Nested Types

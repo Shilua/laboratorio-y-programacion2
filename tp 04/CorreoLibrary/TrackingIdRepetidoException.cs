@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CorreoLibrary
+namespace Entidades
 {
-    class TrackingIdRepetidoException : Exception
+    public class TrackingIdRepetidoException : Exception
     {
         public TrackingIdRepetidoException(string mensaje, Exception inner)
             :base(mensaje, inner)

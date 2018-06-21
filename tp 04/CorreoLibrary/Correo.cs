@@ -34,17 +34,19 @@ namespace Entidades
 
         public static Correo operator +(Correo c, Paquete p)
         {
-            foreach(Paquete aux in c.Paquetes)
-            {
-                if(aux == p)
+           
+                foreach (Paquete aux in c.Paquetes)
                 {
-                   //lanzar exception
+                    if (aux == p)
+                    {
+                        throw new TrackingIdRepetidoException("Paquete repetido");
+                    }                        
                 }
-                else
-                {
-                    c.Paquetes.Add(p);
-                }
-            }
+            c.Paquetes.Add(p);
+            Thread hilo = new Thread(p.MockCicloDeVida);
+            c.mockPaquetes.Add(hilo);
+            hilo.Start();
+
             return c;
         }
         public string  MostrarDatos(List<Paquete> elemento)
@@ -59,7 +61,13 @@ namespace Entidades
 
         public void FinEntregas()
         {
-
+            foreach(Thread aux in this.mockPaquetes)
+            {
+                if(aux.IsAlive)
+                {
+                    aux.Abort();
+                }
+            }
         }
 
         #endregion
