@@ -57,6 +57,11 @@ namespace Entidades
             return retorno;
         }
 
+        public void FinEntregas()
+        {
+
+        }
+
         #endregion
     }
 }

@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Correo.cs" />
+    <Compile Include="GuardarString.cs" />
     <Compile Include="IMostrar.cs" />
     <Compile Include="Paquete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
