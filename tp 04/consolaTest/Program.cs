@@ -13,16 +13,17 @@ namespace consolaTest
         {
 
             Paquete p = new Paquete("direccion", "id");
-            Correo c = new Correo();
-            c+= p;
+            //Correo c = new Correo();
+            //c+= p;
+            PaqueteDAO.Insertar(p);
             //try { c += p; }
             //catch(TrackingIdRepetidoException e)
             //{
             //    Console.WriteLine(e.Message);
             //}
             
-            Console.WriteLine(c.MostrarDatos(c.Paquetes));
-            c.FinEntregas();
+            //Console.WriteLine(c.MostrarDatos(c.Paquetes));
+            //c.FinEntregas();
             Console.ReadKey();
 
         }

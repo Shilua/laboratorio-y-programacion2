@@ -43,7 +43,7 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.mtxtTrackingID = new System.Windows.Forms.MaskedTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbMostrar = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -182,14 +182,14 @@
             this.mtxtTrackingID.Size = new System.Drawing.Size(182, 20);
             this.mtxtTrackingID.TabIndex = 0;
             // 
-            // richTextBox1
+            // rtbMostrar
             // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(13, 337);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(434, 145);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.rtbMostrar.Enabled = false;
+            this.rtbMostrar.Location = new System.Drawing.Point(13, 337);
+            this.rtbMostrar.Name = "rtbMostrar";
+            this.rtbMostrar.Size = new System.Drawing.Size(434, 145);
+            this.rtbMostrar.TabIndex = 2;
+            this.rtbMostrar.Text = "";
             // 
             // contextMenuStrip1
             // 
@@ -201,7 +201,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 494);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbMostrar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmPpal";
@@ -227,7 +227,7 @@
         private System.Windows.Forms.Button btnMostrarTodos;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbMostrar;
         private System.Windows.Forms.Label lblEstadoEntregado;
         private System.Windows.Forms.Label lblEstadoIngresado;
         private System.Windows.Forms.Label lblDireccion;

@@ -49,7 +49,7 @@ namespace Entidades
 
             return c;
         }
-        public string  MostrarDatos(List<Paquete> elemento)
+        public string  MostrarDatos(IMostrar<List<Paquete>> elemento)
         {
             string retorno = "";
             foreach(Paquete aux in elemento)

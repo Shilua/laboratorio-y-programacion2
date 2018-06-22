@@ -15,6 +15,7 @@ namespace MainCorreo
     {
         Correo correo;
         Paquete paquete;
+        //private event Paquete.DelegadoEstado InformaEstado;
         public FrmPpal()
         {
             InitializeComponent();
@@ -34,10 +35,10 @@ namespace MainCorreo
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             paquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
+            paquete.InformaEstado += paq_InformaEstado;
             try
-            {
+            {                
                 correo += paquete;
-                ActualizarEstados();
             }
             catch(TrackingIdRepetidoException ex)
             {
@@ -45,25 +46,55 @@ namespace MainCorreo
             }            
         }
 
+        private void paq_InformaEstado(object sender, EventArgs e)
+        {
+            if (this.InvokeRequired)
+            {
+                Paquete.DelegadoEstado d = new Paquete.DelegadoEstado(paq_InformaEstado);
+                this.Invoke(d, new object[] { sender, e });
+            }
+            else
+            { ActualizarEstados();
+            }
+        }
+
         private void ActualizarEstados()
         {
-            lstEstadoIngresado.Text = "";
-            lstEstadoEnViaje.Text = "";
-            lstEstadoEntregado.Text = "";
             foreach(Paquete aux in correo.Paquetes)
             {
                 switch(aux.Estado)
                 {
                     case Paquete.EEstado.ingresado:
-                        lstEstadoIngresado.Text = aux.ToString();
+                        if (!lstEstadoIngresado.Items.Contains(aux.ToString()))
+                            lstEstadoIngresado.Items.Add(aux.ToString());
+                       
                         break;
                     case Paquete.EEstado.en_viaje:
-                        lstEstadoEnViaje.Text = aux.ToString();
+
+                        if (!lstEstadoEnViaje.Items.Contains(aux.ToString()))
+                        {
+                            lstEstadoEnViaje.Items.Add(aux.ToString());
+                            lstEstadoIngresado.Items.Clear();
+                        }
+                        
                         break;
                     case Paquete.EEstado.entregado:
-                        lstEstadoEntregado.Text = aux.ToString();
+                        if(!lstEstadoEntregado.Items.Contains(aux.ToString()))
+                        {
+                            lstEstadoEntregado.Items.Add(aux.ToString());
+                            lstEstadoEnViaje.Items.Clear();
+                        }
+                        
                         break;
                 }
+            }
+        }
+
+        private void MostrarInformacion<T>(IMostrar<T> elemento)
+        {
+            if(elemento != null)
+            {
+               rtbMostrar.Text = elemento.MostrarDatos(elemento);
             }
         }
 

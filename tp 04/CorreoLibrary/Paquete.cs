@@ -72,8 +72,10 @@ namespace Entidades
         {
             do
             {
-                Thread.Sleep(1000);
-                if(this.Estado == EEstado.ingresado)
+                
+                this.InformaEstado.Invoke(this, null);
+                Thread.Sleep(10000);
+                if (this.Estado == EEstado.ingresado)
                 {
                     this.Estado = EEstado.en_viaje;
                 }
@@ -81,8 +83,10 @@ namespace Entidades
                 {
                     this.Estado = EEstado.entregado;
                 }
-                //informar estado
+                
+                
             } while (this.Estado != EEstado.entregado);
+            this.InformaEstado.Invoke(this, null);
             try
             {
                 PaqueteDAO.Insertar(this);
@@ -116,18 +120,17 @@ namespace Entidades
             }
             return true;           
         }
-        public string MostrarDatos(Paquete elemento)
+        public string MostrarDatos(IMostrar<Paquete> elemento)
         {
-
+           
             return string.Format("{0} para {1} ({2})", elemento.TrackingID,elemento.DireccionEntrega,elemento.Estado);
         }
 
         #endregion
 
         #region Events
-        public delegate void DelegadoInformarEstado(string estado);
-        public event DelegadoInformarEstado InformarEstado;
-
+        public delegate void DelegadoEstado(object sender, EventArgs e);
+        public event DelegadoEstado InformaEstado;
         #endregion
 
         #region Nested Types

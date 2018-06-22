@@ -19,8 +19,8 @@ namespace Entidades
 
         public PaqueteDAO()
         {
-            PaqueteDAO.comando = new SqlCommand(Properties.Settings.Default.cadenaConecction);
-            PaqueteDAO.conexion = new SqlConnection();
+            PaqueteDAO.conexion = new SqlConnection(Properties.Settings.Default.cadenaConecction/*"Data Source=DESKTOP-QRH6RB9\\SQLEXPRESS;Initial Catalog=correo-sp-2017;Integrated Security=True"*/);
+            PaqueteDAO.comando = new SqlCommand();
 
             PaqueteDAO.comando.CommandType = System.Data.CommandType.Text;
             PaqueteDAO.comando.Connection = PaqueteDAO.conexion;
@@ -28,6 +28,7 @@ namespace Entidades
 
         public static bool Insertar(Paquete p)
         {
+            PaqueteDAO dAO = new PaqueteDAO();
             bool retorno = false;
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("INSERT INTO dbo.Paquetes (direccionEntrega,trackingID,alumno) VALUES('{0}','{1}','{2}')", p.DireccionEntrega, p.TrackingID, "Vargas Maximiliano");
