@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="cadenaConecction" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=DESKTOP-QRH5RB9\SQLEXPRESS;Initial Catalog=correo-sp-2017;Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=DESKTOP-9R0IMO8\SQLEXPRESS;Initial Catalog=correo-sp-2017;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

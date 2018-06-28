@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69493FB0-61C1-44E9-8D2B-D4639D7A6741}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>consolaTest</RootNamespace>
-    <AssemblyName>consolaTest</AssemblyName>
+    <ProjectGuid>{14D95908-2E19-451F-B614-6FF2611802E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Vargas.Maximiliano._2018</RootNamespace>
+    <AssemblyName>Vargas.Maximiliano.2018</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -37,19 +37,49 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinal.Designer.cs">
+      <DependentUpon>FrmFinal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFinal.resx">
+      <DependentUpon>FrmFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CorreoLibrary\Entidades.csproj">
-      <Project>{8d9096f2-9943-4c36-b6f2-6caa2cb478ac}</Project>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{15849de6-e2b2-4fd3-971a-b463063e6a1d}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>

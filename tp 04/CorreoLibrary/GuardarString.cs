@@ -13,9 +13,11 @@ namespace Entidades
         {
             try
             {
-                using (StreamWriter guardar = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + archivo + ".txt", true))
+                
+                using (StreamWriter guardar = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "\\" + archivo + ".txt", true))
                 {
-                    guardar.WriteLine();
+                    guardar.WriteLine(texto);
+                    guardar.Close();
                 }
 
                 return true;

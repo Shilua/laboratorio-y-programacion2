@@ -123,7 +123,7 @@ namespace Entidades
         public string MostrarDatos(IMostrar<Paquete> elemento)
         {
            
-            return string.Format("{0} para {1} ({2})", elemento.TrackingID,elemento.DireccionEntrega,elemento.Estado);
+            return string.Format("{0} para {1} ({2})", ((Paquete)elemento).TrackingID, ((Paquete)elemento).DireccionEntrega, ((Paquete)elemento).Estado);
         }
 
         #endregion

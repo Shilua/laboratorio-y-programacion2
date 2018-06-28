@@ -31,6 +31,10 @@ namespace MainCorreo
         {
 
         }
+        private void FrmPpal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            correo.FinEntregas();
+        }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -94,13 +98,41 @@ namespace MainCorreo
         {
             if(elemento != null)
             {
-               rtbMostrar.Text = elemento.MostrarDatos(elemento);
+               if(elemento != null)
+                {
+                    if(elemento is Paquete)
+                    {
+                        rtbMostrar.Text = ((Paquete)elemento).ToString();
+                    }
+                    else if(elemento is Correo)
+                    {
+                       
+                        rtbMostrar.Text = ((Correo)elemento).MostrarDatos((Correo)elemento);
+                    }
+                    string nombreArchivo = "salida";
+                    rtbMostrar.Text.Guardar(nombreArchivo);
+                }
             }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem);
         }
     }
 }

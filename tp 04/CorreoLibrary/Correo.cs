@@ -49,14 +49,19 @@ namespace Entidades
 
             return c;
         }
-        public string  MostrarDatos(IMostrar<List<Paquete>> elemento)
+        public string MostrarDatos(IMostrar<List<Paquete>> elementos)
         {
-            string retorno = "";
-            foreach(Paquete aux in elemento)
+            StringBuilder sb = new StringBuilder();
+            if (elementos is Correo)
             {
-                retorno += aux.MostrarDatos(aux);
+                foreach (Paquete aux in ((Correo)elementos).Paquetes)
+                {
+                    sb.AppendFormat("{0} para {1} ({2})", aux.TrackingID, aux.DireccionEntrega,
+                    aux.Estado.ToString());
+                    sb.AppendLine();
+                }
             }
-            return retorno;
+            return sb.ToString();
         }
 
         public void FinEntregas()

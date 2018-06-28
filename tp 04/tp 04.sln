@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "CorreoLibrary\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainCorreo", "MainCorreo\MainCorreo.csproj", "{78B46A6E-4B55-4B98-822C-B6A5A8F8589E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consolaTest", "consolaTest\consolaTest.csproj", "{69493FB0-61C1-44E9-8D2B-D4639D7A6741}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitario", "TestUnitario\TestUnitario.csproj", "{3A8A221B-C08C-4918-B5D3-FC582D78D91C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{78B46A6E-4B55-4B98-822C-B6A5A8F8589E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78B46A6E-4B55-4B98-822C-B6A5A8F8589E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78B46A6E-4B55-4B98-822C-B6A5A8F8589E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69493FB0-61C1-44E9-8D2B-D4639D7A6741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69493FB0-61C1-44E9-8D2B-D4639D7A6741}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69493FB0-61C1-44E9-8D2B-D4639D7A6741}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69493FB0-61C1-44E9-8D2B-D4639D7A6741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8A221B-C08C-4918-B5D3-FC582D78D91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8A221B-C08C-4918-B5D3-FC582D78D91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8A221B-C08C-4918-B5D3-FC582D78D91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8A221B-C08C-4918-B5D3-FC582D78D91C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
