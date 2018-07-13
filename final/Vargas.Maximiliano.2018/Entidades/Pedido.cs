@@ -13,5 +13,20 @@ namespace Entidades
         List<Producto> productos;
         #endregion
 
+        #region Properties
+        public List<Producto> Productos
+        {
+            get { return this.productos; }
+            set { this.productos = value; }
+        }
+        #endregion
+
+        #region Methods
+        public Pedido()
+        {
+            this.productos = new List<Producto>();
+        }
+        #endregion
+
     }
 }

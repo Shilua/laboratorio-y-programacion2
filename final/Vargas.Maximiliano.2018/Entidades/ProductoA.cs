@@ -27,6 +27,7 @@ namespace Entidades
             set { this.material = value; }
         }
         #endregion
+
         #region Methods
         public ProductoA()
             :base()

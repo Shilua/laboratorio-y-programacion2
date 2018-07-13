@@ -19,6 +19,7 @@ namespace Entidades
         #region Fields
         protected string descripcion;
         #endregion
+
         #region Properties
         public string Descripcion
         {
@@ -46,9 +47,16 @@ namespace Entidades
 
         public void Elaborar()
         {
-            //ProductoDAO
+            ProductoDAO.GuardarProducto(this);
+            InformarProductoTerminado.Invoke(this, null);
            
         }
+        #endregion
+
+        #region Events
+
+        public delegate void ProductoTerminado(Object sender, EventArgs e);
+        public event ProductoTerminado InformarProductoTerminado;
         #endregion
     }
 }
