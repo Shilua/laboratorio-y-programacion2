@@ -26,7 +26,28 @@ namespace Entidades
         {
             this.productos = new List<Producto>();
         }
-        #endregion
+
+        public static Pedido operator +(Pedido unPedido, Producto unProducto)
+        {
+            if(unPedido.Productos.Count<5)
+            {
+                foreach(Producto aux in unPedido.Productos)
+                {
+                    if(aux == unProducto)
+                    {
+                      return unPedido;
+                    }
+                }
+                if(unProducto.ValidarDimensiones())
+                    unPedido.Productos.Add(unProducto);
+            }
+            
+
+            return unPedido;
+        }
+
+
+            #endregion
 
     }
 }
