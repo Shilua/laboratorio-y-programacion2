@@ -26,6 +26,9 @@ namespace testLapizBoligrafo
             Console.ForegroundColor = colorOriginal;
             Console.WriteLine(miBoligrafo);
             Console.ReadKey();
+            BoligrafoHeredado boli = new BoligrafoHeredado();
+            boli.Escribir("Saraza");
+            
            
         }
     }
